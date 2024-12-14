@@ -5,6 +5,7 @@ class UserRepository:
         self.__conn = conn
 
     def registry_user(self, username: str, password: str, balance: int = 0) -> None:
+
         cursor = self.__conn.cursor()
         cursor.execute(
             '''
