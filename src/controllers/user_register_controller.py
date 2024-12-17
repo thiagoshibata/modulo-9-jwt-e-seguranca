@@ -1,6 +1,6 @@
 from src.models.interfaces.user_repository import UserRepositoryInterface
 from src.drivers.password_handler import PasswordHandler
-from src.controllers.interfaces.user_register_controller import UserRegisterControllerInterface
+from .interfaces.user_register_controller import UserRegisterControllerInterface
 
 class UserRegisterController(UserRegisterControllerInterface):
     def __init__(self, user_repository: UserRepositoryInterface):
